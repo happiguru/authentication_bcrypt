@@ -1,7 +1,5 @@
 class HomeController < ApplicationController
-    def index
-        
-        binding.pry
-        
+    before_action :authorize, only: [:home]
+    def home
     end
 end
